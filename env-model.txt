@@ -1,0 +1,13 @@
+# Variable required to Oauthlib functional
+# Users who use MFA are unable to recover tokens using the password method
+# client-credential
+CLIENT_ID=
+# client-secret
+CLIENT_SECRET=
+REDIRECT_URI=""
+AUTHORIZATION_BASE_URL=https://provider.com/auth/realms/{RELM}/protocol/openid-connect/auth
+TOKEN_URL=https://provider.com/auth/realms/{RELM}/protocol/openid-connect/token
+USERINFO_URL=https://provider.com/auth/realms/{RELM}/protocol/openid-connect/userinfo
+INTROSPECTION_URL=https://provider.com/auth/realms/{RELM}/protocol/openid-connect/token/introspect
+OPENID_CONFIGURATION_URL=https://provider.com/auth/realms/{RELM}/.well-known/openid-configuration
+

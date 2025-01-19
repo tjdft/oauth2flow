@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oauth2flow"
+version = "0.1.1"
+description = "Client Authenticator for OAuth2"
+authors = [
+    { name = "Paulo Alexandre", email = "paulo.alexandre@tjdft.jus.br" }
+]
+license = {file = "licence.txt"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.23.0,<3.0.0)",
+    "attrs (>=24.3.0,<25.0.0)"
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+    "oauth2flow",
+]
+norecursedirs = "examples/*"
+
+[tool.ruff.lint]
+select = ["E", "F"]
